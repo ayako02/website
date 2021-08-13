@@ -1,13 +1,13 @@
-const Dotenv = require("dotenv-webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   plugins: [
     new Dotenv(),
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "./index.html",
-      favicon: ["./public/favicon.ico"],
+      template: './public/index.html',
+      filename: './index.html',
+      favicon: ['./public/favicon.ico'],
     }),
   ],
   module: {
@@ -16,9 +16,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
@@ -26,9 +26,9 @@ module.exports = {
         test: /\.(png|jp(e*)g|svg|gif|ico)$/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              name: "images/[hash]-[name].[ext]",
+              name: 'images/[hash]-[name].[ext]',
             },
           },
         ],
