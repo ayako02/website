@@ -6,7 +6,7 @@ import { Link, useLocation } from '@reach/router';
 const NavLink = ({ to, label, className }) => {
   const location = useLocation();
   const currentPath = get(location, 'pathname', '');
-  const activeLink = currentPath === to ? 'b' : '';
+  const activeLink = currentPath === to ? 'b active' : 'dim';
 
   return (
     <Link to={to} className={`${activeLink} ${className}`}>
