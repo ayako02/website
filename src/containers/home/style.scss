@@ -6,10 +6,38 @@
 
   nav {
     .interpunct {
-      color: white;
+      color: white !important;
     }
     a {
+      color: white !important;
       cursor: pointer;
+    }
+  }
+
+  .content {
+    height: 80%;
+
+    .logo {
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      background-color: #111;
+      padding: 0.5rem;
+      color: #f4f4f4;
+      transition: background-c·olor 0.15s ease-in-out;
+      text-decoration: none;
+      margin: 0.5rem;
+
+      svg {
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    .logo--img {
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 }
