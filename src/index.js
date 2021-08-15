@@ -4,7 +4,7 @@ import App from 'containers/app';
 
 import reportWebVitals from './reportWebVitals';
 
-import 'style/index.css';
+import 'style/global.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

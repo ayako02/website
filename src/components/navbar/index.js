@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-
 import { Link } from '@reach/router';
 
 import { routes } from 'router/routes';
+
+import NavLink from './NavLink';
 
 const { home, work } = routes;
 
@@ -13,21 +13,13 @@ const Navbar = () => (
     </Link>
 
     <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-      <Link to={home} className="black link dim f6 f5-l mr3 dib">
-        About
-      </Link>
+      <NavLink label="About" to={home} className="black link dim f6 f5-l mr3 dib" />
 
       <b className="interpunct">·</b>
 
-      <Link to={work} className="black link dim f6 f5-l dib ml3">
-        Work
-      </Link>
+      <NavLink label="Work" to={work} className="black link dim f6 f5-l dib ml3" />
     </div>
   </nav>
 );
-
-Navbar.defaultProps = {};
-
-Navbar.propTypes = {};
 
 export default Navbar;
