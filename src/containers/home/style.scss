@@ -1,37 +1,72 @@
 .home-container {
   height: 100vh;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../../assets/images/gradient-bg.jpg');
 
+  // Navbar
   nav {
     .interpunct {
       color: white !important;
     }
     a {
-      color: white !important;
       cursor: pointer;
+      color: white !important;
+      &:hover {
+        color: white !important;
+      }
     }
+  }
+
+  .active {
+    color: black !important;
   }
 
   .content {
     height: 80%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 2px rgba(161, 150, 150, 0.79);
 
-    .logo {
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      background-color: #111;
+    h4 {
+      letter-spacing: 0.1em;
+    }
+
+    // Icons
+    .icon {
+      margin: 0.5rem;
       padding: 0.5rem;
       color: #f4f4f4;
-      transition: background-c·olor 0.15s ease-in-out;
+      border-radius: 50%;
+      align-items: center;
+      display: inline-flex;
+      margin-right: 1.25rem;
       text-decoration: none;
-      margin: 0.5rem;
+      background-color: #111;
+
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+      transition: background-color 0.15s ease-in-out;
+
+      -webkit-animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-in-out;
 
       svg {
         display: inline-block;
         height: 1.5rem;
         width: 1.5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        animation-name: bounce;
+        -moz-animation-name: bounce;
       }
     }
 
@@ -39,5 +74,17 @@
       height: 1.5rem;
       width: 1.5rem;
     }
+  }
+
+  .footer {
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
   }
 }
