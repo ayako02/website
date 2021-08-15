@@ -1,22 +1,20 @@
-import Navbar from 'components/navbar';
-import IconSection from 'components/home/IconSection';
+import { Suspense, lazy } from 'react';
 
 import './style.scss';
 
+const Navbar = lazy(() => import('components/navbar'));
+const HomeContent = lazy(() => import('components/home'));
+
 const HomePage = () => (
-  <div className="home-container">
-    <Navbar />
+  <Suspense fallback={<div>Loading...</div>}>
+    <div className="home-container">
+      <Navbar />
 
-    <div className="content">
-      <h1 className="white mb0">Ayako</h1>
-      <h4 className="white">Front End Developer | UX Designer</h4>
-      <p className="white">Someone who is passionate on coding, designing, reading & writing.</p>
+      <HomeContent />
 
-      <IconSection />
+      <footer className="footer white">Design & Created by Ayako © 2021</footer>
     </div>
-
-    <footer className="footer white">Design & Created by Ayako © 2021</footer>
-  </div>
+  </Suspense>
 );
 
 export default HomePage;
