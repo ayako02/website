@@ -15,11 +15,11 @@ const Navbar = () => (
     </Link>
 
     <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-      <NavLink label="About" to={home} className="black link f6 f5-l mr3 dib" />
+      <NavLink label="About" to={home} className="black link f5 mr3 dib" />
 
       <b className="interpunct">·</b>
 
-      <NavLink label="Work" to={work} className="black link f6 f5-l dib ml3" />
+      <NavLink label="Work" to={work} className="black link f5 dib ml3" />
     </div>
   </nav>
 );
