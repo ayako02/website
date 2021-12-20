@@ -1,0 +1,41 @@
+.container-design {
+  .grid-gutter-demo .arco-col {
+    height: 48px;
+    color: var(--color-white);
+  }
+
+  .grid-gutter-demo .arco-col > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .grid-gutter-demo .arco-col:nth-child(2n + 1) > div {
+    background-color: rgba(var(--arcoblue-6), 0.9);
+  }
+
+  .grid-gutter-demo .arco-col:nth-child(2n) > div {
+    background-color: var(--color-primary-light-4);
+  }
+
+  .lottie--designer {
+    height: 300px;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: slategray;
+  }
+
+  .icon--figma > img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .icon--adobe > img {
+    //  width: 60%;
+    // height: 60%;
+  }
+}

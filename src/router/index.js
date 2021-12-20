@@ -1,7 +1,7 @@
 import { Router, Redirect } from '@reach/router';
 
-import HomePage from 'containers/home';
-import WorkPage from 'containers/work';
+import HomePage from 'pages/home';
+import WorkPage from 'pages/work';
 
 import { routes } from './routes';
 

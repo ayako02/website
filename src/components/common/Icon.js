@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Icon = ({ href, title, className, isSvg, svgPath, icon }) => (
-  <a href={href} title={title} target="_blank" className={className} rel="noreferrer">
+  <a href={href} title={title} target="_blank" className={`${className}`} rel="noreferrer">
     {isSvg ? (
       <svg
         fill="currentColor"

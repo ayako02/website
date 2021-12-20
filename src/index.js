@@ -5,6 +5,7 @@ import App from 'containers/app';
 import reportWebVitals from './reportWebVitals';
 
 import 'style/global.scss';
+import '@arco-design/web-react/dist/css/arco.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

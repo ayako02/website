@@ -2,17 +2,15 @@ import { Suspense, lazy } from 'react';
 
 import './style.scss';
 
-const Navbar = lazy(() => import('components/navbar'));
-const HomeContent = lazy(() => import('components/home'));
+const Content = lazy(() => import('components/home'));
+const Navbar = lazy(() => import('components/navigation/Navbar'));
 
 const HomePage = () => (
   <Suspense fallback={<div>Loading...</div>}>
     <div className="home-container">
       <Navbar />
-
-      <HomeContent />
-
-      <footer className="footer white">Design & Created by Ayako © 2021</footer>
+      <Content />
+      <footer className="footer white">Design & Create by Ayako © 2021</footer>
     </div>
   </Suspense>
 );

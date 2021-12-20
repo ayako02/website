@@ -1,8 +1,7 @@
 import { Children } from 'react';
 import get from 'lodash.get';
 
-import Icon from 'components/common/Icon';
-
+import { Icon } from 'components/common';
 import { HOME_PAGE_ICONS } from 'settings/constants/icons';
 
 const HomeContent = () => (

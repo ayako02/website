@@ -15,27 +15,17 @@
   nav {
     top: 0;
     position: absolute;
-
-    .interpunct {
-      color: white !important;
-    }
-
     a {
       cursor: pointer;
-      color: white !important;
-
-      &:hover {
-        color: white !important;
-      }
+      color: white;
     }
   }
 
   .active {
-    font: 900;
+    font-weight: 700;
     text-shadow: 2px 2px 2px rgba(161, 150, 150, 0.79);
-
     &:hover {
-      color: #665e4a !important;
+      color: #665e4a;
     }
   }
 
@@ -60,44 +50,43 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
-    }
 
-    // Icons
-    .icon {
-      margin: 0.5rem;
-      padding: 0.5rem;
-      color: #f4f4f4;
-      border-radius: 50%;
-      align-items: center;
-      display: inline-flex;
-      text-decoration: none;
-      background-color: #111;
+      .icon {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        color: #f4f4f4;
+        border-radius: 50%;
+        align-items: center;
+        display: inline-flex;
+        text-decoration: none;
+        background-color: #111;
 
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      animation-timing-function: ease-in-out;
-      transition: background-color 0.15s ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        transition: background-color 0.15s ease-in-out;
 
-      -webkit-animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out;
 
-      svg {
-        display: inline-block;
-        height: 1.5rem;
-        width: 1.5rem;
-      }
+        svg {
+          display: inline-block;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
 
-      img {
-        min-width: 24px;
-        max-width: 24px;
-      }
+        img {
+          min-width: 24px;
+          max-width: 24px;
+        }
 
-      &:hover {
-        cursor: pointer;
-        animation-name: bounce;
-        -moz-animation-name: bounce;
-        background: linear-gradient(45deg, #9514ce, #598bf2);
+        &:hover {
+          cursor: pointer;
+          animation-name: bounce;
+          -moz-animation-name: bounce;
+          background: linear-gradient(45deg, #9514ce, #598bf2);
+        }
       }
     }
 

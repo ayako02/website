@@ -1,0 +1,39 @@
+.work-container {
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    a {
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    font-weight: 700;
+    &:hover {
+      color: #665e4a;
+    }
+  }
+
+  .content {
+    margin-top: 70px;
+    position: absolute;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
