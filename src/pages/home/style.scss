@@ -11,24 +11,6 @@
   background-position: center center;
   background-image: url('../../assets/images/gradient-rainbow.jpg');
 
-  // Navbar
-  nav {
-    top: 0;
-    position: absolute;
-    a {
-      cursor: pointer;
-      color: white;
-    }
-  }
-
-  .active {
-    font-weight: 700;
-    text-shadow: 2px 2px 2px rgba(161, 150, 150, 0.79);
-    &:hover {
-      color: #665e4a;
-    }
-  }
-
   .content {
     opacity: 0.6;
     color: black;

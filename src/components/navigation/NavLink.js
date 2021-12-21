@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Link, useLocation } from '@reach/router';
 
-const NavLink = ({ route, label, className }) => {
+const NavLink = ({ route, label, className, isCustomPath }) => {
   const location = useLocation();
-  const currentPath = get(location, 'pathname', '');
+  const currentPath = isCustomPath ? route : get(location, 'pathname', '');
   const activeLink = currentPath === route ? 'active' : 'dim';
 
   return (
@@ -15,8 +15,8 @@ const NavLink = ({ route, label, className }) => {
   );
 };
 
-NavLink.defaultProps = { className: '', route: '/', label: '' };
+NavLink.defaultProps = { className: '', route: '/', label: '', isCustomPath: false };
 
-NavLink.propTypes = { route: PropTypes.string, label: PropTypes.string, className: PropTypes.string };
+NavLink.propTypes = { route: PropTypes.string, label: PropTypes.string, className: PropTypes.string, isCustomPath: PropTypes.bool };
 
 export default NavLink;

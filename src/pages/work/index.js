@@ -15,13 +15,17 @@ const WorkPage = () => {
 
   return (
     <div className="work-container">
-      <div className="navbar">
+      {/* <div className="navbar--fixed">
         <Navbar currentPath={routes.work} />
-      </div>
+      </div> */}
+
+      <Navbar currentPath={routes.work} className="navbar--fixed" />
 
       <div className="content">
         <SubMenu onClick={onMenuItemClick} />
-        <div className="w-100 pa5">{sectionName === DEFAULT_SECTION_NAME ? <DesignContainer /> : <h4>Work in progress...</h4>}</div>
+        <div className="w-100 pa5">
+          {sectionName === DEFAULT_SECTION_NAME ? <DesignContainer /> : <h4 className="tc">Work in progress...</h4>}
+        </div>
       </div>
     </div>
   );

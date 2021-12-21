@@ -1,5 +1,7 @@
 import EmailIcon from 'assets/icons/email.svg';
+import FigmaIcon from 'assets/icons/figma.svg';
 import BehanceIcon from 'assets/icons/behance.svg';
+import AdobeXDIcon from 'assets/icons/adobe-xd.svg';
 
 export const HOME_PAGE_ICONS = [
   {
@@ -40,5 +42,20 @@ export const HOME_PAGE_ICONS = [
     title: 'Behance',
     href: 'https://www.behance.net/ayakosky',
     icon: <img alt="Behance" src={BehanceIcon} />,
+  },
+];
+
+export const DESIGN_SKILL_ICONS = [
+  {
+    isSvg: false,
+    tooltipLabel: 'Figma',
+    className: 'icon--figma mr3',
+    icon: <img alt="Figma" src={FigmaIcon} />,
+  },
+  {
+    isSvg: false,
+    tooltipLabel: 'Adobe XD',
+    className: 'icon--adobe mr3',
+    icon: <img alt="Adobe XD" src={AdobeXDIcon} />,
   },
 ];

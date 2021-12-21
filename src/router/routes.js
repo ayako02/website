@@ -1,5 +1,5 @@
 export const routes = {
   home: '/',
   work: '/work',
-  design: '/design',
+  design: '/project/design/:designID',
 };
