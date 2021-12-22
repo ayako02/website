@@ -1,0 +1,35 @@
+.container-design {
+  .lottie--designer {
+    height: 300px;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: slategray;
+  }
+
+  .icon--figma > img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .icon--adobe > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .content--list {
+    display: flex;
+    flex-direction: column;
+
+    .list--cover {
+      border-radius: 1rem;
+      box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}

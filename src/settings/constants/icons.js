@@ -1,12 +1,14 @@
-import EmailLogo from 'assets/icons/email.svg';
-import BehanceLogo from 'assets/icons/behance.svg';
+import EmailIcon from 'assets/icons/email.svg';
+import FigmaIcon from 'assets/icons/figma.svg';
+import BehanceIcon from 'assets/icons/behance.svg';
+import AdobeXDIcon from 'assets/icons/adobe-xd.svg';
 
 export const HOME_PAGE_ICONS = [
   {
     isSvg: false,
     title: 'Email',
     href: 'mailto:allisontu02@gmail.com',
-    icon: <img alt="Email" src={EmailLogo} />,
+    icon: <img alt="Email" src={EmailIcon} />,
   },
   {
     isSvg: true,
@@ -30,7 +32,7 @@ export const HOME_PAGE_ICONS = [
   {
     isSvg: true,
     title: 'Medium',
-    href: 'https://medium.com/@unicorn-sky',
+    href: 'https://ayako-dev.medium.com/',
     svgPath: (
       <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
     ),
@@ -39,6 +41,21 @@ export const HOME_PAGE_ICONS = [
     isSvg: false,
     title: 'Behance',
     href: 'https://www.behance.net/ayakosky',
-    icon: <img alt="Behance" src={BehanceLogo} />,
+    icon: <img alt="Behance" src={BehanceIcon} />,
+  },
+];
+
+export const DESIGN_SKILL_ICONS = [
+  {
+    isSvg: false,
+    tooltipLabel: 'Figma',
+    className: 'icon--figma mr3',
+    icon: <img alt="Figma" src={FigmaIcon} />,
+  },
+  {
+    isSvg: false,
+    tooltipLabel: 'Adobe XD',
+    className: 'icon--adobe mr3',
+    icon: <img alt="Adobe XD" src={AdobeXDIcon} />,
   },
 ];
