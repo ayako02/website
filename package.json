@@ -5,6 +5,9 @@
   "homepage": "https://ayakowork.pw",
   "dependencies": {
     "@arco-design/web-react": "^2.27.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.5",
     "@reach/router": "^1.3.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

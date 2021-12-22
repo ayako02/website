@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 import { Link } from '@reach/router';
 import { Divider } from '@arco-design/web-react';
-import { IconLeftCircle } from '@arco-design/web-react/icon';
 
 import { routes } from 'router/routes';
 
