@@ -1,3 +1,3 @@
-import ProjectKyatto from './Kyatto';
+import ProjectKyatto from './kyatto';
 
 export { ProjectKyatto };

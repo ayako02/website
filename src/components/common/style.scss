@@ -2,10 +2,17 @@
   &.icon--tooltip {
     width: 60px;
     height: 60px;
-    background-color: white;
-    border-radius: 50%;
     display: flex;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
+    background-color: white;
+  }
+
+  &.arco-card {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 0.5rem;
+    transition-property: all;
   }
 }

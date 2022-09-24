@@ -5,16 +5,17 @@
     overflow: auto;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
     .content--list {
       margin-top: 0 !important;
-
       span {
         letter-spacing: 1px;
       }
+    }
+    .avatar {
+      object-fit: cover;
     }
   }
 
