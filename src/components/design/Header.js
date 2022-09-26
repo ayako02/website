@@ -1,5 +1,6 @@
 import lottie from 'lottie-web';
 import { Children, useEffect, useRef } from 'react';
+
 import { Divider, Grid } from '@arco-design/web-react';
 
 import DesignerLottie from 'assets/lotties/designer.json';
@@ -31,7 +32,8 @@ const DesignContainerHeader = () => {
       <Row className="pb3">
         <Col span={12}>
           <h1 className="ttu tracked">UX Designs</h1>
-          <p className="description mb4">
+
+          <p className="description mb4 lh-copy measure-wide">
             The training of becoming a UX Designer is on the path. <br />
             As a designer, I will always be empathize on the users need and create designs with more accessibility.
           </p>

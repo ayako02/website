@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Link } from '@reach/router';
 import { Grid } from '@arco-design/web-react';
-import { IconLeftCircle } from '@arco-design/web-react/icon';
+import { IconArrowLeft } from '@arco-design/web-react/icon';
 
 import { routes } from 'router/routes';
 
@@ -18,7 +18,7 @@ const ProjectNavbar = ({ title }) => (
     <Row>
       <Col flex="100px">
         <Link to={work}>
-          <IconLeftCircle />
+          <IconArrowLeft />
         </Link>
       </Col>
       <Col flex="auto" className="f4 fw6 tc ttu tracked helvetica">

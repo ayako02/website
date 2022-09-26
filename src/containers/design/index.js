@@ -4,7 +4,7 @@ import './style.scss';
 
 export const DesignContainer = () => {
   return (
-    <div className="container-design helvetica">
+    <div className="container-design helvetica pa5">
       <DesignContainerHeader />
       <DesignContainerContent />
     </div>
